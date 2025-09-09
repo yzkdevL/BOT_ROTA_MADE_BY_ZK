@@ -76,7 +76,7 @@ Um bot criado no Portal de Desenvolvedores do Discord com as Privileged Gateway 
 Passos
 Clone o repositório:
 
-git clone [https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git](https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git)
+git clone [https://github.com/yzkdevL/BOT_ROTA_MADE_BY_ZK](https://github.com/yzkdevL/BOT_ROTA_MADE_BY_ZK)
 cd SEU-REPOSITORIO
 
 Instale as dependências:
