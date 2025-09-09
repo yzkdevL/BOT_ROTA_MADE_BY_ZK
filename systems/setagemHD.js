@@ -526,7 +526,7 @@ module.exports = {
                 const patente = patentes[patenteSelecionada];
                 let cargoStatus = "✅ Cargos atualizados";
 
-                // Definir o novo apelido baseado na patente..
+                // Definir o novo apelido baseado na patente....
                 let novoApelido = '';
                 const novoMembro = await interaction.guild.members.fetch(usuarioQueEnviouFormularioId);
 
@@ -626,7 +626,7 @@ module.exports = {
                 await canalLogs.send({ embeds: [embedLog] });
 
                 try {
-                    // Envia mensagem de boas-vindas para o novo membro...
+                    // Envia mensagem de boas-vindas para o novo membro....
                     const embedBemVindo = new EmbedBuilder()
                         .setColor('#1a5fb4')
                         .setTitle(`✅ REGISTRO CONFIRMADO - ${interaction.guild.name}`)
@@ -678,7 +678,7 @@ module.exports = {
                 });
 
                 
-                // Limpa os dados
+                // Limpa os dados...
                 await Promise.all([
                     db.delete(`formulario_policial_${usuarioQueEnviouFormularioId}`),
                     db.delete(`membroSelecionado_${usuarioQueEnviouFormularioId}`),
