@@ -526,7 +526,7 @@ module.exports = {
                 const patente = patentes[patenteSelecionada];
                 let cargoStatus = "✅ Cargos atualizados";
 
-                // Definir o novo apelido baseado na patente (usando QRA em vez do nome de usuario)
+                // Definir o novo apelido baseado na patente..
                 let novoApelido = '';
                 const novoMembro = await interaction.guild.members.fetch(usuarioQueEnviouFormularioId);
 
@@ -546,7 +546,7 @@ module.exports = {
                 }
 
                 try {
-                    // Remove cargo de novato e adiciona a patente selecionada
+                    // Remove cargo de novato e adiciona a patente selecionada..
                     await novoMembro.roles.remove(CARGO_NOVATO).catch(() => { });
                     await novoMembro.roles.add([patente.id, ...CARGO_SEPARACAO]);
                     cargoStatus = `✅ Patente atribuída: ${patente.nome}`;
@@ -563,7 +563,7 @@ module.exports = {
                     cargoStatus = '❌ Erro ao atualizar perfil';
                 }
 
-                // Cria o embed de log
+                // Cria o embed de log...
                 const embedLog = new EmbedBuilder()
                     .setColor("#00FF00")
                     .setAuthor({
@@ -626,7 +626,7 @@ module.exports = {
                 await canalLogs.send({ embeds: [embedLog] });
 
                 try {
-                    // Envia mensagem de boas-vindas para o novo membro
+                    // Envia mensagem de boas-vindas para o novo membro...
                     const embedBemVindo = new EmbedBuilder()
                         .setColor('#1a5fb4')
                         .setTitle(`✅ REGISTRO CONFIRMADO - ${interaction.guild.name}`)
@@ -677,7 +677,7 @@ module.exports = {
                     ephemeral: true
                 });
 
-                // Limpa os dados
+                
                 // Limpa os dados
                 await Promise.all([
                     db.delete(`formulario_policial_${usuarioQueEnviouFormularioId}`),
