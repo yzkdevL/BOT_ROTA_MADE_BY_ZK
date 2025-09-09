@@ -56,27 +56,6 @@ A liderança pode cancelar uma solicitação, abrindo um modal para registar o m
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📁 Estrutura do Projeto
-O código é organizado de forma modular para facilitar a manutenção:
-
-/MeuBot/
-├── /systems/
-│   └── setagemHD.js      # Handler principal: lida com todos os botões, modais e menus
-├── /Comandos/
-│   └── setagem.js        # Ficheiro do comando de configuração /sistema_rota
-├── index.js              # Ficheiro principal: login do bot e roteador de interações
-├── handler.js            # Carregador de comandos (opcional, mas recomendado)
-├── config.js             # Ficheiro para o token do bot
-└── README.md             # Este ficheiro
-
-index.js: Inicializa o bot, carrega os comandos e atua como um "roteador", enviando todas as interações (botões, modais, etc.) para serem processadas pelo setagemHD.js.
-
-setagem.js: Define e executa o comando /sistema_rota, responsável pela configuração inicial do sistema.
-
-setagemHD.js: O cérebro do sistema. Contém toda a lógica para o fluxo de registo, busca de membros, aprovação, cancelamento e automação de cargos/apelidos.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🛠️ Tecnologias Utilizadas
 Node.js
 
@@ -97,7 +76,7 @@ Um bot criado no Portal de Desenvolvedores do Discord com as Privileged Gateway 
 Passos
 Clone o repositório:
 
-git clone [https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git](https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git)
+git clone [https://github.com/yzkdevL/BOT_ROTA_MADE_BY_ZK](https://github.com/yzkdevL/BOT_ROTA_MADE_BY_ZK)
 cd SEU-REPOSITORIO
 
 Instale as dependências:
