@@ -1,0 +1,7 @@
+# Ignorar a pasta de dependências
+node_modules/
+
+# Ignorar o arquivo de configuração com o token
+config.js
+.discloudignore
+discloud.config
